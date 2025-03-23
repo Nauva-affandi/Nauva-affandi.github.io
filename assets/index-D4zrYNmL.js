@@ -10,18 +10,16 @@
       	cihuyyyyyy
       </h1>
   	</div>
-  </nav>`}function N(e){e.innerHTML+=E()}const j="modulepreload",$=function(e){return"/"+e},v={},h=function(t,n,a){let o=Promise.resolve();if(n&&n.length>0){document.getElementsByTagName("link");const l=document.querySelector("meta[property=csp-nonce]"),s=(l==null?void 0:l.nonce)||(l==null?void 0:l.getAttribute("nonce"));o=Promise.allSettled(n.map(c=>{if(c=$(c),c in v)return;v[c]=!0;const p=c.endsWith(".css"),k=p?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${c}"]${k}`))return;const d=document.createElement("link");if(d.rel=p?"stylesheet":j,p||(d.as="script"),d.crossOrigin="",d.href=c,s&&d.setAttribute("nonce",s),document.head.appendChild(d),p)return new Promise((_,L)=>{d.addEventListener("load",_),d.addEventListener("error",()=>L(new Error(`Unable to preload CSS for ${c}`)))})}))}function r(l){const s=new Event("vite:preloadError",{cancelable:!0});if(s.payload=l,window.dispatchEvent(s),!s.defaultPrevented)throw l}return o.then(l=>{for(const s of l||[])s.status==="rejected"&&r(s.reason);return t().catch(r)})},I=(e,t,n)=>{const a=e[t];return a?typeof a=="function"?a():Promise.resolve(a):new Promise((o,r)=>{(typeof queueMicrotask=="function"?queueMicrotask:setTimeout)(r.bind(null,new Error("Unknown variable dynamic import: "+t+(t.split("/").length!==n?". Note that variables only represent file names one level deep.":""))))})};async function P(e,t){return(await I(Object.assign({"../databases/KANJI/N4.json":()=>h(()=>import("./N4-BH1kir6Q.js"),[]),"../databases/KANJI/N5.json":()=>h(()=>import("./N5-DTF1LKmo.js"),[])}),`../databases/${e}/${t}.json`,4)).default}function y(e,t){if(e.length>1){const n=Math.max(1,Math.floor(e.length*(t/100)));e.splice(n,0,e.shift())}}function T(e){e.length>1&&(e[0].mistakeData={soft:0,hard:0},e.push(e.shift()))}function M(e){let t=e[0];if(e.length>1){t.mistakeData||(t.mistakeData={soft:0,hard:0}),t.mistakeData.soft++,t.mistakeData.hard=0;const n=Math.max(20,50-t.mistakeData.soft*3);y(e,n)}}function S(e){let t=e[0];if(e.length>1){t.mistakeData||(t.mistakeData={soft:0,hard:0}),t.mistakeData.soft=0,t.mistakeData.hard++;const n=Math.max(45,75-t.mistakeData.hard*3);y(e,n)}}let u=[];async function D(){let e=await P(i("parent").value,i("category_select").value);u=A(e),b()}function b(){const e=i("front"),t=i("back");e.children[0].innerHTML=u[0].k,t.children[0].children[0].innerHTML=u[0].h,t.children[0].children[1].innerHTML=u[0].i}function m(){const e=i("card-inner");e.classList.remove("card_animation"),i("card").classList.remove("rotated"),setTimeout(()=>{e.classList.toggle("card_animation")},350)}function O(){const e=i("next_card"),t=i("lupa_satu"),n=i("lupa_semuanya");e.addEventListener("click",()=>{T(u),b(),m()}),t.addEventListener("click",()=>{M(u),b(),m()}),n.addEventListener("click",()=>{S(u),b(),m()})}function A(e){for(let t=e.length-1;t>0;t--){const n=Math.floor(Math.random()*(t+1));[e[t],e[n]]=[e[n],e[t]]}return e}function H(){return`
+  </nav>`}function j(e){e.innerHTML+=E()}const N="modulepreload",$=function(e){return"/"+e},h={},v=function(t,n,a){let o=Promise.resolve();if(n&&n.length>0){document.getElementsByTagName("link");const l=document.querySelector("meta[property=csp-nonce]"),s=(l==null?void 0:l.nonce)||(l==null?void 0:l.getAttribute("nonce"));o=Promise.allSettled(n.map(c=>{if(c=$(c),c in h)return;h[c]=!0;const p=c.endsWith(".css"),k=p?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${c}"]${k}`))return;const d=document.createElement("link");if(d.rel=p?"stylesheet":N,p||(d.as="script"),d.crossOrigin="",d.href=c,s&&d.setAttribute("nonce",s),document.head.appendChild(d),p)return new Promise((_,L)=>{d.addEventListener("load",_),d.addEventListener("error",()=>L(new Error(`Unable to preload CSS for ${c}`)))})}))}function r(l){const s=new Event("vite:preloadError",{cancelable:!0});if(s.payload=l,window.dispatchEvent(s),!s.defaultPrevented)throw l}return o.then(l=>{for(const s of l||[])s.status==="rejected"&&r(s.reason);return t().catch(r)})},I=(e,t,n)=>{const a=e[t];return a?typeof a=="function"?a():Promise.resolve(a):new Promise((o,r)=>{(typeof queueMicrotask=="function"?queueMicrotask:setTimeout)(r.bind(null,new Error("Unknown variable dynamic import: "+t+(t.split("/").length!==n?". Note that variables only represent file names one level deep.":""))))})};async function P(e,t){return(await I(Object.assign({"../databases/KANJI/N4.json":()=>v(()=>import("./N4-BH1kir6Q.js"),[]),"../databases/KANJI/N5.json":()=>v(()=>import("./N5-DTF1LKmo.js"),[])}),`../databases/${e}/${t}.json`,4)).default}function y(e,t){if(e.length>1){const n=Math.max(1,Math.floor(e.length*(t/100)));e.splice(n,0,e.shift())}}function M(e){e.length>1&&(e[0].mistakeData={soft:0,hard:0},e.push(e.shift()))}function S(e){let t=e[0];if(e.length>1){t.mistakeData||(t.mistakeData={soft:0,hard:0}),t.mistakeData.soft++,t.mistakeData.hard=0;const n=Math.max(20,50-t.mistakeData.soft*3);y(e,n)}}function T(e){let t=e[0];if(e.length>1){t.mistakeData||(t.mistakeData={soft:0,hard:0}),t.mistakeData.soft=0,t.mistakeData.hard++;const n=Math.max(45,75-t.mistakeData.hard*3);y(e,n)}}let u=[];async function D(){let e=await P(i("parent").value,i("category_select").value);u=A(e),b()}function b(){const e=i("front"),t=i("back");e.children[0].innerHTML=u[0].k,t.children[0].children[0].innerHTML=u[0].h,t.children[0].children[1].innerHTML=u[0].i}function m(){const e=i("card-inner");e.classList.remove("card_animation"),i("card").classList.remove("rotated"),setTimeout(()=>{e.classList.toggle("card_animation")},350)}function O(){const e=i("next_card"),t=i("lupa_satu"),n=i("lupa_semuanya");e.addEventListener("click",()=>{M(u),b(),m()}),t.addEventListener("click",()=>{S(u),b(),m()}),n.addEventListener("click",()=>{T(u),b(),m()})}function A(e){for(let t=e.length-1;t>0;t--){const n=Math.floor(Math.random()*(t+1));[e[t],e[n]]=[e[n],e[t]]}return e}function H(){return`
 	<li class="w-full h-15">
 		<div class="flex flex-col">
 			<select class="focus:outline-none border-2 border border-gray-900 dark:border-white rounded-2xl" id="parent">
 				<option value="undefined" disabled selected>pilih opsi</option>
 				<option value="KANJI">kanji</option>
-				<option value="KOTOBA" disabled selected>Kotoba</option>
-				<option value="BUNPOU" disabled selected>Bunpou</option>
 			</select>
 		</div>
 	</li>
-	`}function B(){return`
+	`}function K(){return`
 		<li class=w-full bg-yellow-400>
 			<div class="flex justify-center">
 				<button id="fetch" type"button" class="bg-blue-600 px-5 py-2 rounded-2xl border font-bold">
@@ -29,7 +27,7 @@
 				</button>
 			</div>
 		</li>
-	`}function K(){return`
+	`}function B(){return`
 	<li class="w-full">
 		<div class="flex flex-col">
 			<select class="focus:outline-none border-2 border border-black dark:border-white rounded-2xl" id="category_select">
@@ -49,7 +47,7 @@
 			</select>
 		</div>
 	</li>
-	`}function q(e){e.innerHTML+=C(),J()}let x="";function R(){f||(f=setInterval(()=>{let e=document.getElementById("parent").value;e!==x&&(x=e,e==="KANJI"&&(i("category").innerHTML=K()),e==="BUNPOU"&&(i("category").innerHTML=U()))},650))}let f=null;function g(){f&&(clearInterval(f),f=null)}function C(){return`
+	`}function q(e){e.innerHTML+=C(),J()}let x="";function R(){f||(f=setInterval(()=>{let e=document.getElementById("parent").value;e!==x&&(x=e,e==="KANJI"&&(i("category").innerHTML=B()),e==="BUNPOU"&&(i("category").innerHTML=U()))},650))}let f=null;function g(){f&&(clearInterval(f),f=null)}function C(){return`
 	<div id="sidebar" class="group fixed top-0 w-72 h-full bg-gray-200 dark:bg-[var(--my-light-gray)] shadow-lg transform -translate-x-full transition-transform duration-300 p-4 z-[99]">
 	
 		<div class="flex">
@@ -68,7 +66,7 @@
 		>
 		${H()}
 		<div id="category"></div>
-		${B()}
+		${K()}
 		</ul>
 	</div>
 	`}function J(){[i("openSidebar"),i("closeSidebar")].forEach(e=>{e.addEventListener("click",()=>{i("sidebar").classList.toggle("-translate-x-full")})}),document.getElementById("openSidebar").addEventListener("click",()=>{R()}),document.getElementById("closeSidebar").addEventListener("click",()=>{g()}),i("fetch").addEventListener("click",()=>{g(),D(),i("sidebar").classList.toggle("-translate-x-full")})}function z(e,t,n,a){return`
@@ -106,4 +104,4 @@
 					</div>
 				</div>
 		</div>
-	`}const w=i("app.fixed"),G=i("app");N(w);q(w);Q(G);
+	`}const w=i("app.fixed"),G=i("app");j(w);q(w);Q(G);
