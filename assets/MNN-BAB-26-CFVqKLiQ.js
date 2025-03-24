@@ -1,0 +1,1 @@
+const a=[{k:"作",h:"つくる",i:"membuat"},{k:"泳",h:"およぐ",i:"berenang"},{k:"海",h:"うみ",i:"laut"},{k:"校",h:"こう",i:"sekolah"},{k:"飯",h:"めし",i:"nasi / makanan"},{k:"電",h:"でん",i:"listrik"},{k:"親",h:"おや",i:"orang tua"},{k:"切",h:"きる",i:"memotong"},{k:"忙",h:"いそがしい",i:"sibuk"},{k:"若",h:"わかい",i:"muda"},{k:"便",h:"べん",i:"kemudahan"},{k:"利",h:"り",i:"manfaat"}];export{a as default};
