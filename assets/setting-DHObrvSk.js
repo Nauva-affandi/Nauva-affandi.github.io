@@ -1,0 +1,1 @@
+import{h as n,r as e}from"./index-DWwliJ-8.js";const a=(o,r)=>{const t=o.__vccOpts||o;for(const[s,c]of r)t[s]=c;return t},f=n("pomodoro",()=>{let o=e(1),r=e(1);return{focus:o,rest:r}});export{a as _,f as p};
