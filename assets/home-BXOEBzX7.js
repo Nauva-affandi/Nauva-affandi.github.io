@@ -1,0 +1,1 @@
+import{d as r,c as n,a as s,w as p,u as _,R as c,o,b as m,e as u}from"./index-DTXo0RRY.js";const d=r({__name:"App",setup(t){return(a,e)=>(o(),n("nav",null,[s(_(c),{to:"/app/pomodoro"},{default:p(()=>e[0]||(e[0]=[m("pomodoro timer")])),_:1})]))}}),f={__name:"home",setup(t){return(a,e)=>(o(),u(d))}};export{f as default};
