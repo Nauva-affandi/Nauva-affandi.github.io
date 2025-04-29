@@ -1,0 +1,1 @@
+@keyframes flash{0%{opacity:1}50%{opacity:.5}to{opacity:1}}.line-clear{animation:flash .3s linear 3}
