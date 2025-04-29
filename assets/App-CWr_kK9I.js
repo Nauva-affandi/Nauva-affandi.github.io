@@ -1,1 +1,0 @@
-import{c as a,e as t,a as s,b as o,w as r,u as n,R as c,F as p,o as u}from"./index-BUhMy_qG.js";const l={class:"fixed w-screen h-screen flex justify-center mt-10"},i={__name:"App",setup(f){return(m,e)=>(u(),a(p,null,[e[1]||(e[1]=t(" /app ")),s("nav",l,[o(n(c),{to:"/"},{default:r(()=>e[0]||(e[0]=[t("back to home")])),_:1})])],64))}};export{i as default};
