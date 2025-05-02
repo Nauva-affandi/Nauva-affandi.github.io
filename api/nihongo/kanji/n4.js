@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const response = await fetch(`/database/kanji/n4.json`);
+    const response = await fetch(`/database/nihongo/kanji/n4.json`);
     const data = await response.json();
     res.status(200).json(data);
   } catch (err) {

@@ -1,7 +1,7 @@
 // withMiddleware.js
 import rateLimiter from './../_middleware/rateLimiter.js'
 import logger from './../_middleware/logger.js'
-import cors from './../_middleware/cors.js'
+import cors fnrom './../_middleware/cors.js'
 
 const withMiddleware = (handler) => {
   return async (req, res) => {
@@ -9,7 +9,7 @@ const withMiddleware = (handler) => {
     if (!rateLimiter(req, res)) return
     if (!logger(req, res)) return
     if (!cors(req, res)) return
-
+    
     // If all middleware passed, call the handler
     return handler(req, res)
   }
