@@ -1,4 +1,4 @@
-import wrapper from './_utils/withMiddleWare.js'
+import wrapper from './_utils/withMiddleWare.mjs'
 
 const handler = (req, res) => {
   res.status(200).send('hahaha')
