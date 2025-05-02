@@ -1,4 +1,7 @@
-export default async function handler(req, res) {
+import wrapper from '/api/_utils/withMiddleWare.js'
+
+
+async function handler(req, res) {
   try {
     const response = await fetch(`/database/nihongo/kanji/n4.json`);
     const data = await response.json();
@@ -10,3 +13,5 @@ export default async function handler(req, res) {
     });
   }
 }
+
+export default wrapper(handler)
