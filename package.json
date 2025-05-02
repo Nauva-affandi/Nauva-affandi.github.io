@@ -1,0 +1,9 @@
+{
+  "name": "serverless function",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [],
+  "author": "nauva",
+  "license": "ISC",
+  "description": "just to type module the project"
+}
