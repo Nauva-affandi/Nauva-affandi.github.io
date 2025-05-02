@@ -1,7 +1,7 @@
 // withMiddleware.js
-import rateLimiter from './../middleware/rateLimiter.js'
-import logger from './../middleware/logger.js'
-import cors from './../middleware/cors.js'
+import rateLimiter from './../_middleware/rateLimiter.js'
+import logger from './../_middleware/logger.js'
+import cors from './../_middleware/cors.js'
 
 const withMiddleware = (handler) => {
   return async (req, res) => {
