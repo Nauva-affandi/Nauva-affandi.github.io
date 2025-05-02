@@ -1,4 +1,4 @@
-import wrapper from '/api/_utils/withMiddleWare.js'
+import wrapper from './../../_utils/withMiddleWare.js'
 
 
 async function handler(req, res) {
