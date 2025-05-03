@@ -3,16 +3,26 @@ import rateLimiter from './../_middleware/rateLimiter.js'
 import logger from './../_middleware/logger.js'
 import cors from './../_middleware/cors.js'
 
+
+
 const withMiddleware = (handler) => {
   return async (req, res) => {
-    // Apply each middleware, return false if any fails
+    // Inject util langsung ke req
+    req.getPublicUrl = (path) => {
+      const isLocal = ['localhost:3000', '192.168.1.2:3000'].includes(req.headers.host)
+      const baseUrl = isLocal
+        ? 'http://192.168.1.2:3000'
+        : `https://${req.headers.host}`
+      return `${baseUrl}${path}`
+    }
+
     if (!rateLimiter(req, res)) return
     if (!logger(req, res)) return
     if (!cors(req, res)) return
-    
-    // If all middleware passed, call the handler
+
     return handler(req, res)
   }
 }
+
 
 export default withMiddleware

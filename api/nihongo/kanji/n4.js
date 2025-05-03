@@ -2,16 +2,10 @@ import wrapper from './../../_utils/withMiddleWare.js'
 
 
 
-
 async function handler(req, res) {
   try {
-    const isLocal = ['localhost:3000', '192.168.1.2:3000'].includes(req.headers.host)
-    const baseUrl = isLocal
-      ? 'http://192.168.1.2:3000'
-      : `https://${req.headers.host}`
-    
-
-    const response = await fetch(`${baseUrl}/database/nihongo/kanji/n4.json`)
+    const url = req.getPublicUrl('/database/nihongo/kanji/n4.json')
+    const response = await fetch(url)
     const data = await response.json()
     res.status(200).json(data)
   } catch (err) {
@@ -21,7 +15,6 @@ async function handler(req, res) {
     })
   }
 }
-
 
 
 export default wrapper(handler)
