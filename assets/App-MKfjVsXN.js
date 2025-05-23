@@ -1,1 +1,0 @@
-import{e as s,s as t,h as a,i as r,w as o,u as n,R as p,F as u,f as c}from"./index-CI7nCQNw.js";const f={class:"fixed mt-10 flex h-screen w-screen justify-center"},d={__name:"App",setup(l){return(i,e)=>(c(),s(u,null,[e[1]||(e[1]=t(" /app ")),a("nav",f,[r(n(p),{to:"/"},{default:o(()=>e[0]||(e[0]=[t("back to home")])),_:1})])],64))}};export{d as default};
